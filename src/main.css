@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color: white;
+    background-color: #1f2a36;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html {
+    font-size: 18px;
+}
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+.swiper,
+.swiper-slide,
+.swiper-wrapper {
+  overflow: visible !important; 
+}
+
+.swiper-slide {
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+  
+}
+
+.swiper-slide-active {
+  transform: scale(1.15) !important; 
+ z-index: 10;
+}
+
+.swiper-slide-active > button > div {
+    @apply shadow-xl;
+}
+/*.swiper-slide-active > button > div:first-child > img {
+    @apply w-41 h-41;
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+}*/
+
+.swiper-slide-active > button > div:first-child {
+    @apply border-white;
+}
+.swiper-slide-active > button > div:last-child > img {
+    @apply opacity-70 ;
+}
+
+
