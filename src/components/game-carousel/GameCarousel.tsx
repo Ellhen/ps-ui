@@ -4,7 +4,7 @@ import { type RefObject } from "react";
 import { Swiper, SwiperSlide, type SwiperRef } from "swiper/react";
 import { useGameStore } from "../../store";
 
-import "swiper/css";
+import "swiper/swiper-bundle.css";
 
 interface Props {
 	swiperRef: RefObject<SwiperRef | null>;
